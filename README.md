@@ -107,10 +107,12 @@ python l_plate.py --image <path_to_image> --model l_plate.pt
 
 ## 📌 Notes
 
+- Import filter warnings to remove the warnings
+- Also in classifier use dotenv to embed the following : TF_ENABLE_ONEDNN_OPTS=0
+  
 - All scripts accept optional `--model` arguments to specify custom model paths.
 - Models must be trained beforehand and compatible with the respective framework (`Keras` or `YOLO`).
 - Ensure input images are readable and correctly preprocessed.
 - For YOLO, the model weights must be compatible with the `ultralytics` package.
 
 ---
-
